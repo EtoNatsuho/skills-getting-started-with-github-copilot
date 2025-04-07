@@ -15,9 +15,9 @@ async function fetchActivities() {
                 <strong>${name}</strong>: ${details.description} <br>
                 Schedule: ${details.schedule} <br>
                 Participants: ${details.participants.length}/${details.max_participants} <br>
-                <div>
-                    <strong>Signed-up Participants:</strong>
-                    <ul>
+                <div class="participants-section">
+                    <strong>Participants:</strong>
+                    <ul class="participants-list">
                         ${details.participants.map(participant => `<li>${participant}</li>`).join('')}
                     </ul>
                 </div>
